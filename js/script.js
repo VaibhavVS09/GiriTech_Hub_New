@@ -12,7 +12,7 @@ function incrementStats() {
 
       if (c < target) {
         counter.innerText = Math.ceil(c + increment);
-        setTimeout(updateCounter, 10);
+        setTimeout(updateCounter, 11);
       } else {
         counter.innerText = target;
       }
@@ -21,3 +21,15 @@ function incrementStats() {
   });
 }
 document.addEventListener("DOMContentLoaded", incrementStats);
+
+const promise1 = Promise.resolve(3);
+const promise2 = new Promise((resolve) => setTimeout(resolve, 100, "foo"));
+const promise3 = 42; // This will be automatically converted to a resolved promise.
+
+Promise.all([promise1, promise2, promise3])
+  .then((values) => {
+    console.log(values); // Output: [3, "foo", 42]
+  })
+  .catch((error) => {
+    console.error("Error: ", error); // Handles any rejection from the promises
+  });
