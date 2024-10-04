@@ -43,3 +43,41 @@ font-weight: 600;
     background-image: linear-gradient(60deg, var(--bs-dark) 2%, #ffffff 130%);
   }
 
+  .se-9con{
+    background-color: transparent;
+    background-image: linear-gradient(60deg, #f8f2f2 2%, #131b20 130%);
+  }
+
+  footer{
+    background-color: transparent;
+    background-image: linear-gradient(60deg,#c0ccd3 2%,#f8f2f2 130%);
+  }
+
+  #cname {
+    box-shadow: inset 0 0 0 0 #2783c2;
+    padding: 2px;
+    margin: 2px;
+    transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  }
+  
+  #cname:hover {
+    box-shadow: inset 200px 0 0 0 #c0ccd3;
+  }
+
+  
+  // Media queries
+  @media screen and (max-width: 430px) {
+    #statscounter{
+      font-size: 100px;
+      font-weight: 600;
+    }
+   
+      #se5btn{
+        margin-left: 40px;
+      }
+      .se-9con{
+        background-color: transparent;
+        background-image: linear-gradient(60deg,  #a3adb3 2%,#f8f2f2 130%);
+      }
+}
+  
